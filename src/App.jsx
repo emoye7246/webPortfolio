@@ -1,15 +1,33 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Outlet } from 'react-router-dom'
 import { Navbar } from './Navbar/Navbar'
 import playIcon from '/Users/elijahmoye/Desktop/web_Portfolio/webPortfolio/src/assets/icons/play-button.png'
-import playFair from '/Users/elijahmoye/Desktop/web_Portfolio/webPortfolio/src/assets/fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf'
+import figma from '/Users/elijahmoye/Desktop/web_Portfolio/webPortfolio/src/assets/icons/figma.png'
+import mail from '/Users/elijahmoye/Desktop/web_Portfolio/webPortfolio/src/assets/icons/mail.png'
+import github from '/Users/elijahmoye/Desktop/web_Portfolio/webPortfolio/src/assets/icons/outline.png'
+import linkedIn from '/Users/elijahmoye/Desktop/web_Portfolio/webPortfolio/src/assets/icons/linkedin.png'
+import both from '/Users/elijahmoye/Desktop/web_Portfolio/webPortfolio/src/assets/icons/day-and-night.png'
+import playFair from '/Users/elijahmoye/Desktop/web_Portfolio/webPortfolio/src/assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf'
 
 export const App = () => {
 
+  const [theme, setTheme] = useState(() => {
+
+    return localStorage.getItem('theme') || ('light')
+  })
+
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme)
+    localStorage.setItem("theme", theme)
+  }, [theme])
+
   return (
     <>
+
+    
       <div className='flex flex-row max-w-screen min-h-screen bg-[#F9F9F9] '>
 
       <div className='flex flex-col min-h-full mt-8 w-[95vw] justify-between p-10 gap-y-10 '>
@@ -47,17 +65,33 @@ export const App = () => {
             </div>
            
 
-            <div className='flex flex-row gap-x-8'>
-              <div>Icon</div>
-              <div>toggle</div>
+            <div className='flex flex-row gap-x-4'>
+              <img src={both} alt="" className='w-[24px] h-[24px]' />
+              <label class="flex flex-row items-center cursor-pointer">
+                  <input type="checkbox" value="" className="sr-only peer" />
+                  <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none  peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"></div>
+                </label>
               <div className='font-[playFair]'>light mode is on</div>
+
             </div>
 
 
       </div>
 
 
-          <div className="flex w-[5vw] min-h-full border-gray-200 border-1 p-14 bg-white drop-shadow-sm">
+          <div className="flex flex-col w-[5vw] min-h-full p-5 items-center border-gray-200 border-1  bg-white drop-shadow-sm justify-between">
+
+
+            <div>
+              <img src={mail} alt="mail-icon" className='h-[24px] w-[24px]'/>
+            </div>
+
+            <div className='flex flex-col gap-y-10'>
+              <img src={github} alt="mail-icon" className='h-[32px] w-[32px]'/>
+              <img src={linkedIn} alt="mail-icon" className='h-[32px] w-[32px]'/>
+              <img src={figma} alt="mail-icon" className='h-[32px] w-[32px]'/>
+
+            </div>
               
           </div>
           
