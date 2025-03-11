@@ -17,11 +17,16 @@ export const Homepage = () => {
 
                 <div className="flex flex-row relative right-10 max-w-full justify-end items-center gap-x-20">
                     <div className='text-[60px] font-[playFair] '>About Me</div>
-                    <div className=" h-[400px] w-[600px] rounded-[14px]" style={{backgroundImage: `url(${eliTransparent})`}}>
-                        
-                            <img src={eli} alt="" className='w-[600px] h-[400px] object-contain opacity-' />
 
+                    <div className='flex flex-col items-center'>
+                            <div className=" h-[400px] w-[600px] rounded-[14px]" style={{backgroundImage: `url(${eliTransparent})`}}>
+                            
+                                <img src={eli} alt="" className='w-[600px] h-[400px] object-contain opacity-' />
+
+                        </div>
+                        <div>Click here to learn more</div>
                     </div>
+                    
                 </div>
 
 
