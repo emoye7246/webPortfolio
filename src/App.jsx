@@ -1,15 +1,11 @@
 import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import { Outlet } from 'react-router-dom'
-import { Navbar } from './Navbar/Navbar'
 import playIcon from '/Users/elijahmoye/Desktop/web_Portfolio/webPortfolio/src/assets/icons/play-button.png'
 import figma from '/Users/elijahmoye/Desktop/web_Portfolio/webPortfolio/src/assets/icons/figma.png'
 import mail from '/Users/elijahmoye/Desktop/web_Portfolio/webPortfolio/src/assets/icons/mail.png'
 import github from '/Users/elijahmoye/Desktop/web_Portfolio/webPortfolio/src/assets/icons/outline.png'
 import linkedIn from '/Users/elijahmoye/Desktop/web_Portfolio/webPortfolio/src/assets/icons/linkedin.png'
 import both from '/Users/elijahmoye/Desktop/web_Portfolio/webPortfolio/src/assets/icons/day-and-night.png'
-import playFair from '/Users/elijahmoye/Desktop/web_Portfolio/webPortfolio/src/assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf'
 
 export const App = () => {
 
@@ -30,9 +26,9 @@ export const App = () => {
     
       <div className='flex flex-row max-w-screen min-h-screen bg-[#F9F9F9] '>
 
-      <div className='flex flex-col min-h-full mt-8 w-[95vw] justify-between p-10 gap-y-10 '>
+      <div className='flex flex-col min-h-screen mt-8 w-[95vw] justify-between p-10 gap-y-4 '>
 
-        <div className='flex flex-row justify-between'>
+        <div className='flex flex-row grow justify-between'>
 
             <div>
               <div className='text-[24px] text-[#9B9DA1] font-[playFair]'>Elijah Moye</div>
@@ -48,7 +44,7 @@ export const App = () => {
           </div>
 
 
-            <div className='flex flex-row max-w-full justify-between gap-10'>
+            <div className='flex flex-row max-w-full justify-between gap-10 flex-grow'>
 
                 <div className='flex flex-col items-start justify-start gap-y-10'>
 
@@ -59,7 +55,7 @@ export const App = () => {
 
                 </div>
 
-              <div className='flex items-center justify-center grow'>
+              <div className='flex items-center justify-center grow h-[calc(100vh-200px)] overflow-y-scroll'>
                 <Outlet />
               </div>
             </div>
@@ -101,4 +97,3 @@ export const App = () => {
     </>
   )
 }
-
