@@ -1,16 +1,16 @@
 export const myImages = {
 
-    headshot: 'src/assets/eli.jpg',
-    headshotTransparent: 'src/assets/icons/transparent.png',
-    work: 'src/assets/icons/myWork.png',
-    play: 'src/assets/icons/play-button.png',
-    figma: 'src/assets/icons/figma.png',
-    mail: 'src/assets/icons/mail.png',
-    github: 'src/assets/icons/outline.png',
-    linkedIn: 'src/assets/icons/linkedin.png',
-    dayNnight: 'src/assets/icons/day-and-night.png',
-    contactInfo: 'src/assets/IconsTools/contact-mail.png', 
-    email: 'src/assets/IconsTools/email.png',
-    phone: 'src/assets/IconsTools/telephone.png',
-    download: 'src/assets/IconsTools/download.png'
+    headshot: '/assets/eli.jpg',
+    headshotTransparent: '/assets/icons/transparent.png',
+    work: '/assets/icons/myWork.png',
+    play: '/assets/icons/play-button.png',
+    figma: '/assets/icons/figma.png',
+    mail: '/assets/icons/mail.png',
+    github: '/assets/icons/outline.png',
+    linkedIn: '/assets/icons/linkedin.png',
+    dayNnight: '/assets/icons/day-and-night.png',
+    contactInfo: '/assets/IconsTools/contact-mail.png', 
+    email: '/assets/IconsTools/email.png',
+    phone: '/assets/IconsTools/telephone.png',
+    download: '/assets/IconsTools/download.png'
 }

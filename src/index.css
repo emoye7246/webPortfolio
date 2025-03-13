@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Playfair';
+  src: url('public/assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf');
+}
+
 
 ::-webkit-scrollbar{
 

@@ -5,12 +5,12 @@ export const FrontTools = () => {
 
     const FrontTools = [
 
-        {Tool: 'Visual Studio Code', image: 'src/assets/IconsTools/vscode.PNG'},
-        {Tool: 'NPM', image: 'src/assets/IconsTools/npm.PNG'},
-        {Tool: 'Github', image: 'src/assets/IconsTools/github.PNG'},
-        {Tool: 'Vercel', image: 'src/assets/IconsTools/vercel.PNG'},
-        {Tool: 'Postman', image: 'src/assets/IconsTools/postman.PNG'},
-        {Tool: 'Canva', image: 'src/assets/IconsTools/canva.PNG'},
+        {Tool: 'Visual Studio Code', image: '/assets/IconsTools/vscode.PNG'},
+        {Tool: 'NPM', image: '/assets/IconsTools/npm.PNG'},
+        {Tool: 'Github', image: '/assets/IconsTools/github.PNG'},
+        {Tool: 'Vercel', image: '/assets/IconsTools/vercel.PNG'},
+        {Tool: 'Postman', image: '/assets/IconsTools/postman.PNG'},
+        {Tool: 'Canva', image: '/assets/IconsTools/canva.PNG'},
     ]
 
     return (

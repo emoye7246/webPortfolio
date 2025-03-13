@@ -4,12 +4,12 @@ export const SkillsFront = () => {
 
     const FrontSkills = [
 
-        {Skill: 'HTML5', image: 'src/assets/icons/html.PNG'},
-        {Skill: 'CSS', image: 'src/assets/icons/css.PNG'},
-        {Skill: 'Javascript(ES6+)', image: 'src/assets/icons/javascript.PNG'},
-        {Skill: 'React.js', image: 'src/assets/icons/react.PNG'},
-        {Skill: 'Tailwind Css', image: 'src/assets/icons/tailwind.PNG'},
-        {Skill: 'Figma', image: 'src/assets/icons/figmaIcon.PNG'},
+        {Skill: 'HTML5', image: '/assets/icons/html.PNG'},
+        {Skill: 'CSS', image: '/assets/icons/css.PNG'},
+        {Skill: 'Javascript(ES6+)', image: '/assets/icons/javascript.PNG'},
+        {Skill: 'React.js', image: '/assets/icons/react.PNG'},
+        {Skill: 'Tailwind Css', image: '/assets/icons/tailwind.PNG'},
+        {Skill: 'Figma', image: '/assets/icons/figmaIcon.PNG'},
     ]
 
     return (

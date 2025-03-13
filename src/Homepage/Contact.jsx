@@ -1,4 +1,5 @@
 import { myImages } from "../icons"
+import { FadeInWhenVisible } from "../stylingComponents/fadeOnScroll"
 
 export const Contact = () => {
 
@@ -7,10 +8,12 @@ export const Contact = () => {
         <>
             <div className="flex flex-col justify-center items-center gap-y-20">
 
+                <FadeInWhenVisible>
                     <div className="flex flex-col">
                         <div className="text-7xl">Contact</div>
                         <hr className="w-[700px]" />
                     </div>
+                </FadeInWhenVisible>
 
                     <div className="flex flex-row w-[50vw] justify-between  items-center">
 

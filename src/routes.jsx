@@ -1,5 +1,6 @@
 import { App } from "./App";
 import { Homepage } from "./Homepage/homepage";
+import { ProjectsPage } from "./Pages/Projects";
 
 export const routes = [
 
@@ -8,7 +9,8 @@ export const routes = [
         element: <App />, 
         children: [
 
-            {index: true, element: <Homepage />}
+            {index: true, element: <Homepage />},
+            {path: 'projects', element: <ProjectsPage />}
         ]
     }
 ]
