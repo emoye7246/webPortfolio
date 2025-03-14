@@ -14,3 +14,14 @@ export const myImages = {
     phone: '/assets/IconsTools/telephone.png',
     download: '/assets/IconsTools/download.png'
 }
+
+export const lightModeIcons = {
+
+    arrowLight: '/assets/lightModeIcons/arrowLight.png'
+}
+
+
+export const darkModeIcons = {
+
+    arrowLight: '/assets/darkModeIcons/arrow.png'
+}

@@ -23,7 +23,7 @@ export const App = () => {
 
       <div className={darkMode ? 'flex flex-row max-w-screen min-h-screen bg-[#2E2E2E]' : 'flex flex-row max-w-screen min-h-screen bg-[#F9F9F9]'}>
 
-      <div className='flex flex-col min-h-screen mt-8 w-[95vw] justify-between p-10 gap-y-4 '>
+      <div className='flex flex-col min-h-screen  w-[95vw] justify-between p-10 gap-y-4 '>
 
         <div className='flex flex-row grow justify-between'>
 
@@ -52,7 +52,7 @@ export const App = () => {
 
                 </div>
 
-              <div className='flex items-center justify-center grow h-[calc(100vh-300px)] overflow-y-scroll snap-y snap-mandatory snap-center '>
+              <div className='flex items-center justify-center grow h-[calc(100vh-275px)] overflow-y-scroll snap-y snap-mandatory snap-center '>
 
               <WebContext.Provider value={{darkMode}}>
 
