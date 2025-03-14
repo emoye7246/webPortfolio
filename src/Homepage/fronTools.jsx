@@ -24,8 +24,8 @@ export const FrontTools = () => {
 
                     <FadeInWhenVisible>
                         <div className="flex flex-col items-center justify-center">
-                            <div className="text-7xl">My Frontend Tools</div>
-                            <hr className="w-[700px]" />
+                            <div style={{fontFamily: `Playfair`}} className={darkMode ? 'text-white text-7xl' : 'text-black text-7xl' }>My Frontend Tools</div>
+                            <hr className={darkMode ? 'border-[1px] border-white w-[700px]' : 'border-[1px] border-black w-[700px]'} />
                         </div>
                     </FadeInWhenVisible>
 
@@ -36,7 +36,7 @@ export const FrontTools = () => {
                             <div key={i} className="flex flex-col items-center justify-center">
 
                                     <img src={tool.image} alt="skillIcon" className="w-[200px] h-[200px]" />
-                                    <div>{tool.Tool}</div>
+                                    <div style={{fontFamily: `Playfair`}}  className={darkMode ? 'text-white' : 'text-black'}>{tool.Tool}</div>
 
                             </div>
                         )}
@@ -47,9 +47,9 @@ export const FrontTools = () => {
                         <div className='absolute w-full text-center items-center justify-center'>
 
                             <div className='flex flex-row items-center text-center justify-center relative gap-x-5 mt-3'>
-                                <img src={darkMode ? darkModeIcons.arrowLight : lightModeIcons.arrowLight} alt="arrowIcons" className='w-[24px] h-[24px]' />
-                                <div>Scroll Down</div>
-                                <img src={darkMode ? darkModeIcons.arrowLight : lightModeIcons.arrowLight} alt="arrowIcons" className='w-[24px] h-[24px]' />
+                                <img src={darkMode ? darkModeIcons.arrow : lightModeIcons.arrowLight} alt="arrowIcons" className='w-[24px] h-[24px]' />
+                                <div className={darkMode ? 'text-white' : 'text-black'}>Scroll Down</div>
+                                <img src={darkMode ? darkModeIcons.arrow : lightModeIcons.arrowLight} alt="arrowIcons" className='w-[24px] h-[24px]' />
                             </div>
 
                         </div>

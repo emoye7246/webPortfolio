@@ -14,7 +14,7 @@ export const Homepage = () => {
     return (
 
         <>
-            <div className="flex flex-col w-full h-full text-center justify-evenly gap-y-20 relative">
+            <div className="flex flex-col w-full h-full text-center justify-evenly gap-y-18 relative">
 
                 <div>
                     <FadeInWhenVisible>
@@ -25,17 +25,19 @@ export const Homepage = () => {
                 <div style={{fontFamily: `Playfair`}} className="flex flex-row relative right-10 max-w-full justify-end items-center gap-x-20 mb-28">
                     <div  className={darkMode ? 'text-[60px] text-white ' : 'text-[60px] '}>About Me</div>
                     <div className=" h-[400px] w-[600px] rounded-[14px]" style={{backgroundImage: `url(${myImages.headshotTransparent})`}}>
-                        
-                            <img src={myImages.headshot} alt="" className='w-[600px] h-[400px] object-contain' />
-                            <div className={darkMode ? 'text-white' : 'text-black'}>Click here to learn more</div>
+
+                            <Link to='about'>
+                                <img src={myImages.headshot} alt="pfp" className='w-[600px] h-[400px] object-contain' />
+                                <div className={darkMode ? 'text-white' : 'text-black'}>Click here to learn more</div>
+                            </Link>
 
                         <FadeIn>
                             <div className='absolute text-center items-center justify-center'>
 
                                 <div className='flex flex-row items-center text-center justify-center relative right-1/2 gap-x-5 mt-3'>
-                                    <img src={darkMode ? darkModeIcons.arrowLight : lightModeIcons.arrowLight} alt="arrowIcons" className='w-[24px] h-[24px]' />
-                                    <div>Scroll Down</div>
-                                    <img src={darkMode ? darkModeIcons.arrowLight : lightModeIcons.arrowLight} alt="arrowIcons" className='w-[24px] h-[24px]' />
+                                    <img src={darkMode ? darkModeIcons.arrow : lightModeIcons.arrowLight} alt="arrowIcons" className='w-[24px] h-[24px]' />
+                                    <div className={darkMode ? 'text-white' : 'text-black'}>Scroll Down</div>
+                                    <img src={darkMode ? darkModeIcons.arrow : lightModeIcons.arrowLight} alt="arrowIcons" className='w-[24px] h-[24px]' />
                                 </div>
 
                             </div>
@@ -51,7 +53,7 @@ export const Homepage = () => {
                     </FadeInWhenVisible>
                 </div>
 
-                <div className="flex flex-row relative right-10 max-w-full justify-end items-center gap-x-20">
+                <div className="flex flex-row relative right-10 max-w-full justify-end items-center gap-x-20 ">
                     <div style={{fontFamily: `Playfair`}}  className={darkMode ? 'text-[60px] text-white ' : 'text-[60px] '}>My Work</div>
                     <div className=" h-[400px] w-[600px] rounded-[14px]">
 
@@ -64,9 +66,9 @@ export const Homepage = () => {
                             <div className='absolute text-center items-center justify-center'>
 
                                 <div className='flex flex-row items-center text-center justify-center relative right-1/2 gap-x-5 mt-3'>
-                                    <img src={darkMode ? darkModeIcons.arrowLight : lightModeIcons.arrowLight} alt="arrowIcons" className='w-[24px] h-[24px]' />
-                                    <div>Scroll Down</div>
-                                    <img src={darkMode ? darkModeIcons.arrowLight : lightModeIcons.arrowLight} alt="arrowIcons" className='w-[24px] h-[24px]' />
+                                    <img src={darkMode ? darkModeIcons.arrow : lightModeIcons.arrowLight} alt="arrowIcons" className='w-[24px] h-[24px]' />
+                                    <div className={darkMode ? 'text-white' : 'text-black'}>Scroll Down</div>
+                                    <img src={darkMode ? darkModeIcons.arrow : lightModeIcons.arrowLight} alt="arrowIcons" className='w-[24px] h-[24px]' />
                                 </div>
 
                             </div>
