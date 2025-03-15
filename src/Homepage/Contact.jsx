@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { darkModeIcons, lightModeIcons, myImages } from "../icons"
-import { FadeInWhenVisible } from "../stylingComponents/fadeOnScroll"
+import { FadeInWhenVisible, FadeIn } from "../stylingComponents/fadeOnScroll"
 import { WebContext } from "../App"
 
 export const Contact = () => {
@@ -11,12 +11,12 @@ export const Contact = () => {
         <>
             <div className="flex flex-col w-full justify-center items-center gap-y-20">
 
-                <FadeInWhenVisible>
+                <FadeIn>
                     <div className="flex flex-col">
                         <div style={{fontFamily: `Playfair`}} className={darkMode ? 'text-white text-7xl' : 'text-black text-7xl' }>Contact</div>
                         <hr className={darkMode ? 'border-[1px] border-white w-[700px]' : 'border-[1px] border-black w-[700px]'}/>
                     </div>
-                </FadeInWhenVisible>
+                </FadeIn>
 
                     <div className="flex flex-row w-[50vw] justify-between  items-center">
 
@@ -43,10 +43,10 @@ export const Contact = () => {
                                     <div style={{fontFamily: `Playfair`}} className={darkMode ? 'text-white' : 'text-black'}>(602) 919 - 5399</div>
                                 </div>
 
-                                <div className="flex flex-row gap-x-10 w-full" >
+                                <a href="/assets/Web Development Resume.pdf" download className="flex flex-row gap-x-10 w-full" >
                                     <img src={darkMode ? darkModeIcons.download : lightModeIcons.download} alt="downloadIcon" className="w-[24px] h-[24px]" />
-                                    <div style={{fontFamily: `Playfair`}} className={darkMode ? 'text-white' : 'text-black'}> Download Resume</div>
-                                </div>
+                                    <div style={{fontFamily: `Playfair`}} className={darkMode ? 'text-white' : 'text-black'}> Download My Resume</div>
+                                </a>
                   
                             </div>
                             

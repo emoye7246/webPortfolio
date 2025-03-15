@@ -21,7 +21,8 @@ export const lightModeIcons = {
     pause: '/assets/lightModeIcons/pause.png',
     play: '/assets/lightModeIcons/play-button.png',
     phone: '/assets/lightModeIcons/telephone.png', 
-    contact: '/assets/lightModeIcons/contact-mail.png'
+    contact: '/assets/lightModeIcons/contact-mail.png', 
+    home: '/assets/lightModeIcons/home.png'
 
 }
 
@@ -41,5 +42,6 @@ export const darkModeIcons = {
     pause: '/assets/darkModeIcons/pause.png',
     play: '/assets/darkModeIcons/play-button.png',
     phone: '/assets/darkModeIcons/telephone.png', 
-    contact: '/assets/darkModeIcons/contact-mail.png'
+    contact: '/assets/darkModeIcons/contact-mail.png',
+    home: '/assets/darkModeIcons/home.png'
 }

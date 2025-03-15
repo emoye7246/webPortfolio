@@ -11,7 +11,7 @@ export const AboutPage = () => {
     return (
 
         <>
-            <div style={{fontFamily: 'Playfair'}} className="flex flex-row w-full h-full items-center justify-evenly gap-y-10" id="fade">
+            <div style={{fontFamily: 'Playfair'}} className={darkMode ? "flex flex-row w-full h-full items-center justify-evenly gap-y-10 text-white" : "flex flex-row w-full h-full items-center justify-evenly gap-y-10 text-black"} id="fade">
 
 
                 <div className="flex flex-col items-center justify-center w-[50vw] h-full gap-y-10">
@@ -19,7 +19,7 @@ export const AboutPage = () => {
 
                     <div className="flex flex-col items-center justify-center w-[400px] h-full ">
 
-                        <img src={myImages.headshot} alt="" className="rounded-[14px] border-2 drop-shadow-xs border-gray-200"/>
+                        <img src={myImages.headshot} alt="" className={darkMode ? "rounded-[14px] border-2 drop-shadow-xs border-gray-200/10" : "rounded-[14px] border-2 drop-shadow-xs border-gray-200"}/>
                             
                     </div>
 
