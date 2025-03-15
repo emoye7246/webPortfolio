@@ -1,12 +1,45 @@
-# React + Vite
+# Web Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview 
 
-Currently, two official plugins are available:
+The Web Portfolio is a personal showcase built with React, designed to highlight projects, skills, and experience in an interactive and visually appealing way. It includes a built-in music player with custom songs, React routing for seamless navigation, and a dark mode/light mode toggle for a personalized user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+🌐 React Routing & Links – Navigate smoothly between sections
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎵 Built-in Music Player – Play custom-loaded songs while browsing
+
+🌗 Dark Mode & Light Mode – Switch between themes for better accessibility
+
+🎨 Responsive & Modern UI – Styled for both desktop and mobile users
+
+🛠 Project & Skills Showcase – Highlight work and expertise dynamically
+
+## Tech Stack
+
+Frontend: React.js, JavaScript, HTML, TailwindCss
+
+State Management: React useState for theme toggle and music player
+
+Styling: Regular CSS with dark mode and light mode support
+
+Routing: React Router for seamless navigation
+
+## Usage 
+
+Browse through the portfolio to explore projects and skills.
+
+Enjoy background music with the built-in music player.
+
+Toggle between dark and light mode for a customized experience.
+
+Browse through multiple projects with documentation, figma links, and live previews
+
+## Future Improvements 
+
+📝 Blog Section – Share insights and updates on projects
+
+
+
+
