@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext, createContext } from 'react'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import { darkModeIcons, lightModeIcons, myImages } from './icons'
 
 export const WebContext = createContext(null)
@@ -52,7 +52,7 @@ export const App = () => {
 
                 </div>
 
-              <div className='flex items-center justify-center grow h-[calc(100vh-275px)] overflow-y-scroll snap-y snap-mandatory snap-center '>
+              <div className='flex items-center justify-center grow h-[calc(100vh-200px)] overflow-y-scroll  '>
 
               <WebContext.Provider value={{darkMode}}>
 
@@ -84,6 +84,10 @@ export const App = () => {
             <div className='mt-5'>
               <img src={darkMode ? darkModeIcons.mail : lightModeIcons.mail} alt="mail-icon" className='h-[24px] w-[24px]'/>
             </div>
+
+            <Link to='/'>
+                  Home
+            </Link>
 
             <div className='flex flex-col gap-y-10 mb-5'>
               <img src={darkMode ? darkModeIcons.github : lightModeIcons.github} alt="mail-icon" className='h-[32px] w-[32px]'/>

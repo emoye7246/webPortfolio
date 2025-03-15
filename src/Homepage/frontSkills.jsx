@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { FadeInWhenVisible } from "../stylingComponents/fadeOnScroll"
+import { FadeInWhenVisible, FadeIn } from "../stylingComponents/fadeOnScroll"
 import { WebContext } from "../App"
 import { lightModeIcons, darkModeIcons} from "../icons"
 
@@ -22,7 +22,7 @@ export const SkillsFront = () => {
         <>
 
         
-            <div className="flex flex-col gap-y-20">
+            <div className="flex flex-col justify-evenly gap-y-20">
 
                 <FadeInWhenVisible>
                     <div className="flex flex-col items-center justify-center">
@@ -44,8 +44,7 @@ export const SkillsFront = () => {
 
                 </div>
 
-                 <FadeInWhenVisible>
-                    <div className='absolute w-full text-center items-center justify-center'>
+                 <FadeIn>
 
                         <div className='flex flex-row items-center text-center justify-center relative gap-x-5 mt-3'>
                             <img src={darkMode ? darkModeIcons.arrow : lightModeIcons.arrowLight} alt="arrowIcons" className='w-[24px] h-[24px]' />
@@ -53,8 +52,7 @@ export const SkillsFront = () => {
                             <img src={darkMode ? darkModeIcons.arrow : lightModeIcons.arrowLight} alt="arrowIcons" className='w-[24px] h-[24px]' />
                         </div>
 
-                    </div>
-                </FadeInWhenVisible>
+                </FadeIn>
 
             </div>
         </>

@@ -9,7 +9,7 @@ export const Contact = () => {
     return (
 
         <>
-            <div className="flex flex-col justify-center items-center gap-y-20">
+            <div className="flex flex-col w-full justify-center items-center gap-y-20">
 
                 <FadeInWhenVisible>
                     <div className="flex flex-col">

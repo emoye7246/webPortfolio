@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
    export const FadeInWhenVisible = ({ children }) => {
         return (
           <motion.div
-            initial={{ opacity: 0, y: 60 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -16,10 +16,24 @@ import { motion } from "framer-motion";
       export const FadeIn = ({ children }) => {
         return (
           <motion.div
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 1 }}
             transition={{ duration: 0.6, ease: "easeIn" }}
+          >
+            {children}
+          </motion.div>
+        )
+      }
+
+
+      export const FadeInWork = ({ children }) => {
+        return (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
           >
             {children}
           </motion.div>
