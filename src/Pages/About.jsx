@@ -19,7 +19,7 @@ export const AboutPage = () => {
 
                     <div className="flex flex-col items-center justify-center w-[400px] h-full ">
 
-                        <img src={myImages.headshot} alt="" className={darkMode ? "rounded-[14px] border-2 drop-shadow-xs border-gray-200/10" : "rounded-[14px] border-2 drop-shadow-xs border-gray-200"}/>
+                        <img src={myImages.headshot} alt="headshot" className={darkMode ? "rounded-[14px] border-2 drop-shadow-xs border-gray-200/10" : "rounded-[14px] border-2 drop-shadow-xs border-gray-200"}/>
                             
                     </div>
 
