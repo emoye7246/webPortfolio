@@ -91,15 +91,15 @@ export const App = () => {
 
             <div className='flex flex-col gap-y-10 mb-5'>
 
-              <div onClick={() => window.open('https://github.com/emoye7246', '_blank', "noopener,noreferrer")}>
+              <div className='cursor-pointer' onClick={() => window.open('https://github.com/emoye7246', '_blank', "noopener,noreferrer")}>
                 <img src={darkMode ? darkModeIcons.github : lightModeIcons.github} alt="github-icon" className='h-[32px] w-[32px]'/>
               </div>
 
-              <div onClick={() => window.open('https://www.linkedin.com/in/elijah-moye-566676213/', '_blank', "noopener,noreferrer")}>
+              <div className='cursor-pointer' onClick={() => window.open('https://www.linkedin.com/in/elijah-moye-566676213/', '_blank', "noopener,noreferrer")}>
                 <img src={darkMode ? darkModeIcons.linkedIn : lightModeIcons.linkedin} alt="linkedin-icon" className='h-[32px] w-[32px]'/>
               </div>
 
-              <div onClick={() => window.open('https://www.figma.com/files/team/1468242853243992189/recents-and-sharing?fuid=1468242851430072543', '_blank', "noopener,noreferrer")}>
+              <div className='cursor-pointer' onClick={() => window.open('https://www.figma.com/files/team/1468242853243992189/recents-and-sharing?fuid=1468242851430072543', '_blank', "noopener,noreferrer")}>
                 <img src={darkMode ? darkModeIcons.figma : lightModeIcons.figma} alt="figma-icon" className='h-[32px] w-[32px]'/>
               </div>
 
